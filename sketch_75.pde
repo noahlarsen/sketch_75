@@ -3,7 +3,7 @@ import processing.pdf.*;
 void setup() {
   size(1000, 800);
   smooth();
-  beginRecord(PDF, "sketch_50.pdf");
+ beginRecord(PDF, "sketch_55.pdf");
   noLoop();
   noStroke();
 }
@@ -14,15 +14,26 @@ void draw() {
 
 background(random(220,240), random(100,255), random(20));
 
-for(int r=1; r<100; r+=1) {
+float x_box = 0;
+for(int i=0; i<width; i+=1) {
+ float y_box = 0;
+  for(int h=0; h<height; h+=1) {
+    fill(random(220,240), random(100,255), random(20), random(30,100));
+    rect(x_box, y_box, 5, 5);
+    y_box += 5;
+   }
+   x_box += 5;
+}
+
+for(int r=0; r<100; r+=1) {
   float x_01 = width/2;
   float x_02 = random(350, 450);
   float x_03 = random(350, 450);
   float x_04 = 0;
-  float y_01 = random(350, 450);
-  float y_02 = random(200, 600);
-  float y_03 = random(200, 600);
-  float y_04 = random(350, 450);
+  float y_01 = random(250, 550);
+  float y_02 = random(300, 400);
+  float y_03 = random(300, 400);
+  float y_04 = random(250, 550);
   float steps = random(3, 5);
   noStroke();
   for (int i = 0; i <= steps; i++) {
