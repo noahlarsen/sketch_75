@@ -3,7 +3,7 @@ import processing.pdf.*;
 void setup() {
   size(1000, 800);
   smooth();
- beginRecord(PDF, "sketch_55.pdf");
+ beginRecord(PDF, "sketch_82.pdf");
   noLoop();
   noStroke();
 }
@@ -12,13 +12,11 @@ void draw() {
 
 //sets background color  
 
-background(random(220,240), random(100,255), random(20));
-
 float x_box = 0;
 for(int i=0; i<width; i+=1) {
  float y_box = 0;
   for(int h=0; h<height; h+=1) {
-    fill(random(220,240), random(100,255), random(20), random(30,100));
+    fill(random(10,50), random(10,50), random(20,150));
     rect(x_box, y_box, 5, 5);
     y_box += 5;
    }
@@ -64,9 +62,9 @@ for(int r=0; r<100; r+=1) {
     float r_width = random(4, 20);
     float e_size = random(5);
     float e_alf = 200;
-    float color_01 = random(10,40);
-    float color_02 = random(110,180);
-    float color_03 = random(160, 210);
+    float color_01 = random(20,150);
+    float color_02 = random(30);
+    float color_03 = random(140,200);
     float flip = random(10);
      pushMatrix();
      translate(x_start, y_start);
@@ -81,9 +79,9 @@ for(int r=0; r<100; r+=1) {
     float r_width = random(4, 20);
     float e_size = random(5);
     float e_alf = 200;
-    float color_01 = random(10,40);
-    float color_02 = random(110,180);
-    float color_03 = random(160, 210);
+    float color_01 = random(20,150);
+    float color_02 = random(30);
+    float color_03 = random(140,200);
     float flip = random(10);
      noStroke();
      pushMatrix();
@@ -99,9 +97,9 @@ for(int r=0; r<100; r+=1) {
     float r_width = random(4, 20);
     float e_size = random(5);
     float e_alf = 200;
-    float color_01 = random(10,40);
-    float color_02 = random(110,180);
-    float color_03 = random(160, 210);
+   float color_01 = random(20,150);
+    float color_02 = random(30);
+    float color_03 = random(140,200);
     float flip = random(10);
      noStroke();
      pushMatrix();
